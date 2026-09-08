@@ -28,7 +28,7 @@ The system utilizes an asynchronous FastAPI gateway, Sarvam AI for Indian-langua
 | **Team Lead & System Architect** | Overall architecture design, FastAPI gateway routing, state routing, and deployment pipeline. | FastAPI WebSocket manager, system orchestration, Docker containerization, Azure cloud deployment, Redis Pub/Sub architecture. |
 | **Backend & Security Engineer** | Database architecture, authentication services, cryptographic security, and regulatory compliance. | MongoDB Atlas schemas, bcrypt password/PIN hashing pipelines, JWT token authentication, DPDP Act 2023 field encryption, and audit log generation. |
 | **AI/ML & NLP Pipeline Engineer** | Speech-to-text, neural translation, acoustic analysis, and distress score fusion algorithms. | Sarvam AI (Saaras, Mayura, Bulbul) integration, Groq LLM prompt design & guardrails, openSMILE/Librosa vocal prosody extraction, and multi-modal distress scoring. |
-| **Frontend & UI/UX Engineer** | Cross-platform victim intake client and real-time supervisory web dashboard. | Flutter/React Native mobile app (PCM audio streaming, native UI), React/Next.js Duty Officer Dashboard (live transcripts, real-time alert popups, 1-click takeover). |
+| **Frontend & UI/UX Engineer** | Cross-platform victim intake client and real-time supervisory web dashboard. | React Native mobile app (PCM audio streaming, native UI), React/Next.js Duty Officer Dashboard (live transcripts, real-time alert popups, 1-click takeover). |
 
 ---
 
@@ -72,7 +72,7 @@ The system uses a decoupled, real-time streaming pipeline:
 ```mermaid
 flowchart TB
     subgraph Client["Client Layer"]
-        Mobile["Victim Mobile App<br/>(Flutter / React Native)<br/>PCM audio streaming"]
+        Mobile["Victim Mobile App<br/>(React Native)<br/>PCM audio streaming"]
         Officer["Duty Officer Dashboard<br/>(React / Next.js)<br/>Live transcripts & alerts"]
     end
 
